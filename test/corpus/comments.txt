@@ -1,0 +1,25 @@
+===================
+Twig Comment (single line)
+===================
+{# Comment #}
+---
+
+(template (comment_directive))
+
+===================
+Twig Comment (padded with #s)
+===================
+{## Comment with extra #s ##}
+---
+
+(template (comment_directive))
+
+===================
+Twig Comment (multiline)
+===================
+{# 
+  Multiline comment
+#}
+---
+
+(template (comment_directive))

@@ -1,0 +1,29 @@
+{
+  "name": "tree-sitter-twig",
+  "version": "1.0.0",
+  "main": "bindings/node",
+  "license": "MIT",
+  "scripts": {
+    "generate": "node_modules/.bin/tree-sitter generate",
+    "parse": "node_modules/.bin/tree-sitter parse example.twig"
+  },
+  "dependencies": {
+    "nan": "^2.15.0"
+  },
+  "devDependencies": {
+    "tree-sitter-cli": "^0.20.0"
+  },
+  "tree-sitter": [
+    {
+      "scope": "text.html.twig",
+      "file-types": [
+        "twig"
+      ],
+      "injections": "queries/injections-twig.scm",
+      "injection-regex": "twig",
+      "highlights": [
+        "queries/highlights.scm"
+      ]
+    }
+  ]
+}

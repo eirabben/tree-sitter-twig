@@ -1,0 +1,38 @@
+=============
+Directive
+=============
+{% block 'test' %}
+---
+
+(template
+  (directive (code)))
+
+=============
+Output directive
+=============
+{{ variable }}
+---
+
+(template
+  (output_directive (code)))
+
+=============
+Full template
+=============
+<ul>
+  {% for item in items %}
+    <li data-id="{{ item.id }}">{{ item.title }}</li>
+  {% endfor %}
+</ul>
+---
+
+(template
+  (content)
+  (directive (code))
+  (content)
+  (output_directive (code))
+  (content)
+  (output_directive (code))
+  (content)
+  (directive (code))
+  (content))
