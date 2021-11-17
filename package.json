@@ -19,7 +19,7 @@
       "file-types": [
         "twig"
       ],
-      "injections": "queries/injections-twig.scm",
+      "injections": "queries/injections.scm",
       "injection-regex": "twig",
       "highlights": [
         "queries/highlights.scm"
