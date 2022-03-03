@@ -9,8 +9,7 @@
       "sources": [
         "bindings/node/binding.cc",
         "src/parser.c",
-        "node_modules/tree-sitter-html/src/scanner.cc"
-        # If your language uses an external scanner, add it here.
+        "src/scanner.cc",
       ],
       "cflags_c": [
         "-std=c99",
