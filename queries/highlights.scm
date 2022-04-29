@@ -10,20 +10,3 @@
   ">"
   "</"
 ] @punctuation.bracket
-
-(comment_directive) @comment
-[
-  "{%"
-  "{%-"
-  "{%~"
-  "%}"
-  "-%}"
-  "~%}"
-  "{{"
-  "{{-"
-  "{{~"
-  "}}"
-  "-}}"
-  "~}}"
-] @keyword
-
