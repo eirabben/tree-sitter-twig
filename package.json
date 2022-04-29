@@ -3,12 +3,15 @@
   "version": "1.0.0",
   "main": "bindings/node",
   "license": "MIT",
+  "scripts": {
+    "test": "./node_modules/.bin/tree-sitter test"
+  },
   "dependencies": {
     "nan": "^2.15.0"
   },
   "devDependencies": {
-    "tree-sitter-cli": "^0.20.4",
-    "tree-sitter-html": "github:tree-sitter/tree-sitter-html#d93af48"
+    "tree-sitter-cli": "^0.20.6",
+    "tree-sitter-html": "github:tree-sitter/tree-sitter-html#161a924"
   },
   "tree-sitter": [
     {
@@ -17,9 +20,9 @@
         "twig"
       ],
       "highlights": [
-        "node_modules/tree-sitter-html/queries/highlights.scm"
+        "queries/highlights.scm"
       ],
-      "injections": "node_modules/tree-sitter-html/queries/injections.scm",
+      "injections": "queries/injections.scm",
       "injection-regex": "twig"
     }
   ]

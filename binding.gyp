@@ -4,7 +4,7 @@
       "target_name": "tree_sitter_twig_binding",
       "include_dirs": [
         "<!(node -e \"require('nan')\")",
-        "src"
+        "src",
       ],
       "sources": [
         "bindings/node/binding.cc",
